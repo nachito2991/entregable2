@@ -1,11 +1,11 @@
 const mercaderia = [
-        {id :1
+        {id :1,
         titulo: "tableteria",
         precio: 500,
         img:  "https://www.instagram.com/p/CbOWmqDAJFN/",
         },
 
-        {id :2
+        {id :2,
         titulo: "Helados",
         precio: 1000,
         img:  "https://www.instagram.com/p/CZ5YFejgAWt/",
@@ -15,12 +15,12 @@ const mercaderia = [
 
         {id :3,
         titulo: "Postres",
-        precio: 600
+        precio: 600,
         img:  "https://www.instagram.com/p/CbJIKXvApdA/",
         },
 
         {id :4,
-        titulo: mayorista,
+        titulo: "mayorista",
         precio: 4000,
         img:  "https://www.instagram.com/p/CU57IsWAuYA/",
         },
@@ -33,7 +33,7 @@ const mercaderia = [
 
 
 function renderizarProductos(){
-    mercaderia.forEach((productos) => {
+    mercaderia.forEach((producto) => {
 
             let productoHTML =`
             
@@ -50,7 +50,7 @@ function renderizarProductos(){
  `;
 
             items.innerHTML += productoHTML;
-          }
-)}
-
+          
+    });
+}
 renderizarProductos () ;
